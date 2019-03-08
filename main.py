@@ -16,7 +16,7 @@ for i in range(n):
     graph[i][i] = np.inf
 	
 # запуск муравьиного алгоритма
-ant_colony = AntColony(graph, 25, 100, 0.5, alpha=1, beta=1)
+ant_colony = AntColony(graph, 20, 200, 0.9, alpha=2, beta=1)
 shortest_path = ant_colony.main_func()
 
 print(int(shortest_path[1]))  #  вывод длины наименьшего пути, найденного муравьями (shortest_path[0] - путь, shortest_path[1] - его длина)
